@@ -14,7 +14,9 @@ body{
     top: 50%;
     left: 50%;
 }
+
 button{
+    outline: none;
     padding: 10px 25px;
     font-size: 18px;
     color: #7d2ae8;
@@ -32,8 +34,18 @@ button{
     border-radius: 15px;
     max-width: 380px;
     width: 100%;
-    /* opacity: 0; */
+    opacity: 0;
     pointer-events: none;
+    transition: top 0s 0.2s ease-in-out,
+            opacity 0.2s 0s ease-in-out,
+            transform 0.2s 0s ease-in-out;
+}
+.popup.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: top 0s 0s ease-in-out,
+            opacity 0.2s 0s ease-in-out,
+            transform 0.2s 0s ease-in-out;
 }
 .popup :is( header, .icons){
     display: flex;
@@ -44,7 +56,6 @@ button{
     padding-bottom: 15px;
     border: 1px solid #ebedf9 ;
 }
-
 header span{
     font-size: 21px;
     font-weight: 600;
@@ -56,7 +67,6 @@ header .close{
     align-items: center;
     border-radius: 50%;
 }
-
 header .close{
     color: #878787;
     height: 33px;
@@ -120,6 +130,9 @@ header .close{
     width: 50px;
     text-align: center;
     font-size: 18px;
+}
+.field .active{
+    border-color: #0d279b;
 }
 .field input{
     border: none;
