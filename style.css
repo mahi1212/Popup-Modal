@@ -92,28 +92,60 @@ header .close{
 }
 
 .icons a:nth-child(1){
-    color: #1877F2;
-    border-color: #4f8cdd;
+    color: #17447e;
+    border-color: #1876f288;
+}
+
+.icons a:nth-child(1):hover{
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    background-color: #1e569e;
 }
 
 .icons a:nth-child(2){
-    color: #1c59a8;
-    border-color: #0e386e;
+    color: #137aaa;
+    border-color: #7e78cc7e;
+}
+
+.icons a:nth-child(2):hover{
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    background-color: #137aaa;
 }
 
 .icons a:nth-child(3){
     color: #a80e0e;
-    border-color: #f80d2c;
+    border-color: #df1a3486;
 }
+
+.icons a:nth-child(3):hover{
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    background-color: #e61111;
+}
+
 
 .icons a:nth-child(4){
     color: #169616;
-    border-color: #09620d;
+    border-color: #09620d83;
+}
+
+.icons a:nth-child(4):hover{
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    background-color: #169616;
 }
 
 .icons a:nth-child(5){
     color: #1877F2;
-    border-color: #2b3b50;
+    border-color: rgba(43, 59, 80, 0.534);
+}
+
+.icons a:nth-child(5):hover{
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    background-color: #1877F2;
+    
 }
 
 .content .field{
